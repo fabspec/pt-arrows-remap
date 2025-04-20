@@ -1,0 +1,15 @@
+default partial alphanumeric_keys
+xkb_symbols "arrows_with_shift" {
+
+    include "pt(basic)"
+
+    key <LEFT> {
+        type = "TWO_LEVEL",
+        symbols[Group1] = [ Left, less ]
+    };
+
+    key <RGHT> {
+        type = "TWO_LEVEL",
+        symbols[Group1] = [ Right, greater ]
+    };
+};
